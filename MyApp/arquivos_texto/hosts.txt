@@ -1,0 +1,6 @@
+Por definição, host é qualquer computador ou máquina conectado a uma rede, que conta com número de IP e nome definidos. Essas máquinas são responsáveis por oferecer recursos, informações e serviços aos usuários ou clientes. Por essa abrangência, a palavra pode ser utilizada como designação para diversos casos que envolvam uma máquina e uma rede, desde computadores pessoais à roteadores.
+O serviço que mais se utiliza do termo é a Internet. A rede mundial interliga inúmeros dispositivos, como computadores pessoais, estações de trabalho ou servidores, que armazenam e transmitem dados como páginas da web, imagens e textos. Todos esses dispositivos são conhecidos como hosts.
+
+Servidores de hospedagem de sites também podem ser considerados hosts. Esses serviços contam com uma máquina central, o host, que fica conectada 24 horas por dia, enquanto armazena e envia os dados das páginas para a Internet. Essa máquina é responsável pelo armazenamento de todos os arquivos – CSS, Javascripts e HTML– das páginas que se encontram online.
+
+O termo pode ainda ser usado para indicar outras formas de rede que não a Internet. Um roteador que gera a rede onde diversas máquinas se conectam por meio de um número de IP, por exemplo, também pode ser considerado um host.

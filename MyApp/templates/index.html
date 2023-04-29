@@ -1,0 +1,30 @@
+{%extends "template.html"%}
+
+{%block conteudo%}
+
+<main>
+    <div class="itens__body">
+        <h2 class="texto__subtitulo">{{subtitulo1}}</h2>
+        <p class="texto__geral">{{texto1}}</p>
+    </div>
+    <div class="itens__body">
+        <h2 class="texto__subtitulo">{{subtitulo2}}</h2>
+        <p class="texto__geral">{{texto2}}</p>
+    </div>
+    <div class="itens__body">
+        <h2 class="texto__subtitulo">{{subtitulo3}}</h2>
+        <form action="/validar" method="post">
+            <div class="alinhamento__texto__input itens__body">
+                <label for="entrada_dados"><b>{{texto_input}}</b></label>
+                <input class=" ajuste__input" id="entrada_dados" type="text" , name="IP" , placeholder="192.168.1.1/24"
+                    required>
+                <button type="submit" value="Enviar">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+</main>
+<footer>&copy; IPV4 website create by Rogério Bicho</footer>
+
+</body>
+{%endblock%}

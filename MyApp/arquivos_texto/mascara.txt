@@ -1,0 +1,9 @@
+A máscara de rede tem 32 bits, assim como o endereço IP, tendo como finalidade mascarar uma parte do endereço IP. Sendo assim, todo endereço IP tem uma máscara correspondente, servindo para identificar qual parte do endereço é da rede e qual é a do host.
+Para exemplificar, vamos supor que o endereço IP 191.171.0.50 tem uma máscara de rede que é 255.255.255.0 (classe C). 
+Nesse caso, a parte correspondente à rede é 191.171.0 e a parte que se refere ao host é 50, Ou seja:
+
+Rede: 191.171.0;
+Host: 50.
+
+Então, com o objetivo de dividir a rede, é possível dividir a máscara, utilizando valores de 0 a 255. Assim, origina-se a máscara de sub-rede, que consegue notificar para o roteador que as mensagens identificadas com emissor e destino apresentam um endereço diferente.
+Desse modo, ela é capaz de reconhecer tanto a parte da rede quanto a parte do host, possibilitando, por exemplo, que o roteador entenda quando os pacotes devem ficar na rede e quando devem ser transmitidos para outra.

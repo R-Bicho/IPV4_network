@@ -1,0 +1,64 @@
+{%extends "template.html"%}
+
+{%block conteudo%}
+
+<main>
+    <a href="/">Pagina Inicial</a>
+
+    <div>
+        {% if valor == True %}
+        <div>
+            <label><b>{{ip}}</b></label>
+            <p>{{resultado[0]}}</p>
+        </div>
+
+        <div>
+            <label><b>{{prefixo}}</b></label>
+            <p>{{resultado[1]}}</p>
+        </div>
+
+        <div>
+            <label><b>{{mascara}}</b></label>
+            <p>{{resultado[2]}}</p>
+        </div>
+
+        <div>
+            <label><b>{{ip_rede}}</b></label>
+            <p>{{resultado[3]}}</p>
+        </div>
+
+        <div>
+            <label><b>{{ip_broadcast}}</b></label>
+            <p>{{resultado[4]}}</p>
+        </div>
+
+        <div>
+            <label><b>{{hosts}}</b></label>
+            <p>{{resultado[5]}}</p>
+        </div>
+
+        {%else%}
+        <p>{{retorno}}</p>
+        {% endif %}
+    </div>
+
+    <div>
+        <div>
+            <h2><b>{{subtitulo1}}</b></h2>
+            <p>{{texto_ip}}</p>
+        </div>
+
+        <div>
+            <h2><b>{{subtitulo2}}</b></h2>
+            <p>{{texto_mascara}}</p>
+        </div>
+
+        <div>
+            <h2><b>{{subtitulo3}}</b></h2>
+            <p>{{texto_hosts}}</p>
+        </div>
+
+    </div>
+
+</main>
+{%endblock%}
