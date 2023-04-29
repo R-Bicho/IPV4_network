@@ -1,14 +1,13 @@
 import re
 
-from flask import Flask, render_template, request
-
 from classes import CalculateIPV4
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
 
 texto_cabecalho = 'Redes IPV4' 
-caminho_texto = 'C:\\Programação\\IPV4\\MyApp\\arquivos_texto\\'
+caminho_texto = 'C:/Programação/IPV4/MyApp/arquivos_texto/'
 
 @app.route('/')
 def index ():
