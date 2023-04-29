@@ -118,6 +118,4 @@ class CalculateIPV4:
 
         string_broadcast_IP = '.'.join(decimal_broadcast_IP)
         return string_broadcast_IP
-    
-if __name__=='__main__':
-    CalculateIPV4()
+ 

@@ -1,7 +1,8 @@
 import re
 
-from classes import CalculateIPV4
 from flask import Flask, render_template, request
+
+from classes import CalculateIPV4
 
 app = Flask(__name__)
 
