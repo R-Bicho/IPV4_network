@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 
 texto_cabecalho = 'Redes IPV4' 
-caminho_texto = './MyApp/arquivos_texto/'
+caminho_texto = './arquivos_texto/'
 
 @app.route('/')
 def index ():
