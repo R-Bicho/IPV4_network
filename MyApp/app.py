@@ -43,6 +43,8 @@ def validar():
                        'IP de Rede','IP de Broadcast', 'Hosts']
     subtitulos = ['IP', 'Mascara Sub-Rede', 'Hosts']
 
+    texto_input = 'Digite o IP da rede + Bit: '
+
     arquivos = arquivos_texto()                       
 
     ip_regexp = re.compile(
@@ -74,7 +76,8 @@ def validar():
                            texto_mascara = arquivos[2],
                            subtitulo1 = subtitulos[0],
                            subtitulo2 = subtitulos[1],
-                           subtitulo3 = subtitulos[2]                           
+                           subtitulo3 = subtitulos[2],
+                           texto_input = texto_input                           
                            )
 
 def arquivos_texto():

@@ -3,62 +3,73 @@
 {%block conteudo%}
 
 <main>
-    <a href="/">Pagina Inicial</a>
+    <a class="menu" href="/">Pagina Inicial</a>
 
-    <div>
+    <div class="itens__body">
+        <form action="/validar" method="post">
+            <div class="alinhamento__texto__input itens__body">
+                <label for="entrada_dados"><b>{{texto_input}}</b></label>
+                <input class=" ajuste__input" id="entrada_dados" type="text" , name="IP" , placeholder="192.168.1.1/24"
+                    required>
+                <button type="submit" value="Enviar">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container__resultado">
         {% if valor == True %}
-        <div>
-            <label><b>{{ip}}</b></label>
-            <p>{{resultado[0]}}</p>
+        <div class="ajuste__titulo__resultado">
+            <label class="titulo__resultado"><b>{{ip}}</b></label>
+            <p class="saida__calculo">{{resultado[0]}}</p>
         </div>
 
-        <div>
-            <label><b>{{prefixo}}</b></label>
-            <p>{{resultado[1]}}</p>
+        <div class="ajuste__titulo__resultado">
+            <label class="titulo__resultado"><b>{{prefixo}}</b></label>
+            <p class="saida__calculo">{{resultado[1]}}</p>
         </div>
 
-        <div>
-            <label><b>{{mascara}}</b></label>
-            <p>{{resultado[2]}}</p>
+        <div class="ajuste__titulo__resultado">
+            <label class="titulo__resultado"><b>{{mascara}}</b></label>
+            <p class="saida__calculo">{{resultado[2]}}</p>
         </div>
 
-        <div>
-            <label><b>{{ip_rede}}</b></label>
-            <p>{{resultado[3]}}</p>
+        <div class="ajuste__titulo__resultado">
+            <label class="titulo__resultado"><b>{{ip_rede}}</b></label>
+            <p class="saida__calculo">{{resultado[3]}}</p>
         </div>
 
-        <div>
-            <label><b>{{ip_broadcast}}</b></label>
-            <p>{{resultado[4]}}</p>
+        <div class="ajuste__titulo__resultado">
+            <label class="titulo__resultado"><b>{{ip_broadcast}}</b></label>
+            <p class="saida__calculo">{{resultado[4]}}</p>
         </div>
 
-        <div>
-            <label><b>{{hosts}}</b></label>
-            <p>{{resultado[5]}}</p>
+        <div class="ajuste__titulo__resultado">
+            <label class="titulo__resultado"><b>{{hosts}}</b></label>
+            <p class="saida__calculo">{{resultado[5]}}</p>
         </div>
 
         {%else%}
-        <p>{{retorno}}</p>
+        <p class="saida__calculo"><b>{{resultado}}</b></p>
         {% endif %}
     </div>
 
     <div>
         <div>
-            <h2><b>{{subtitulo1}}</b></h2>
-            <p>{{texto_ip}}</p>
+            <h2 class="texto__subtitulo"><b>{{subtitulo1}}</b></h2>
+            <p class="texto__geral">{{texto_ip}}</p>
         </div>
 
         <div>
-            <h2><b>{{subtitulo2}}</b></h2>
-            <p>{{texto_mascara}}</p>
+            <h2 class="texto__subtitulo"><b>{{subtitulo2}}</b></h2>
+            <p class="texto__geral">{{texto_mascara}}</p>
         </div>
 
         <div>
-            <h2><b>{{subtitulo3}}</b></h2>
-            <p>{{texto_hosts}}</p>
+            <h2 class="texto__subtitulo"><b>{{subtitulo3}}</b></h2>
+            <p class="texto__geral">{{texto_hosts}}</p>
         </div>
 
     </div>
-
 </main>
+<footer>&copy; IPV4 website create by Rogério Bicho</footer>
 {%endblock%}
