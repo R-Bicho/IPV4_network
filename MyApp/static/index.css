@@ -36,12 +36,6 @@ footer {
     margin-top: 2%;
 }
 
-.ajuste__tabela {
-    display: flex;
-    width: 100%;
-    border-bottom: 5px solid black;
-}
-
 .principal__container {
     margin-left: 2%;
     margin-right: 2%;
@@ -102,4 +96,83 @@ footer {
     color: black;
     border-bottom: 0.2rem solid black;
     border-radius: 0.3rem;
+}
+
+
+@media (max-width: 935px) {
+
+    header {
+        font-size: 3.2rem;
+    }
+
+    .texto__subtitulo {
+        font-size: 1.1rem;
+    }
+
+    .texto__geral {
+        font-size: 0.9rem;
+    }
+
+    .alinhamento__texto__input {
+        font-size: 0.9rem;
+    }
+
+    .container__resultado {
+        border: 0.15rem solid black;
+    }
+
+    .titulo__resultado,
+    .saida__calculo {
+        font-size: 0.8rem;
+    }
+
+    .menu {
+        font-size: 1.4rem;
+        border-bottom: 0.15rem solid black;
+        border-radius: 0.2rem;
+    }
+
+    footer {
+        font-size: 0.6rem;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    header {
+        font-size: 2.7rem;
+    }
+
+    .texto__subtitulo {
+        font-size: 0.9rem;
+    }
+
+    .texto__geral {
+        font-size: 0.7rem;
+    }
+
+    .alinhamento__texto__input {
+        font-size: 0.75rem;
+    }
+
+    .container__resultado {
+        border: 0.12rem solid black;
+    }
+
+    .titulo__resultado,
+    .saida__calculo {
+        font-size: 0.65rem;
+    }
+
+    .menu {
+        font-size: 1.1rem;
+        border-bottom: 0.12rem solid black;
+        border-radius: 0.15rem;
+    }
+
+    footer {
+        font-size: 0.4rem;
+    }
+
 }
