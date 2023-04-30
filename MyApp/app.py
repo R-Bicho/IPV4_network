@@ -60,6 +60,7 @@ def validar():
         resultado = 'Digite um IP válido'  
         valor = False
 
+    
 
     return render_template('resultado.html', resultado=resultado, 
                            valor=valor,

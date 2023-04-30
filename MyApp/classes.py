@@ -34,7 +34,7 @@ class CalculateIPV4:
 
         _, prefix = self.separete_ip()
         temporary = 32 - int(prefix)
-        hosts = (2**temporary) - 2
+        hosts = (2**temporary)
         return hosts
 
     def network_mask(self):
